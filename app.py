@@ -126,7 +126,9 @@ def health_check():
     return jsonify({"status": "healthy", "message": "Python backend is running!"})
 
 if __name__ == '__main__':
+    import os
     print("🚀 Starting Pathfinding Server...")
     print("📍 Server will run on: http://localhost:5000")
     print("🔧 Make sure to install requirements: pip install flask flask-cors")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host="0.0.0.0", port=port)

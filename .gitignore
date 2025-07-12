@@ -1,1 +1,14 @@
 venv/ 
+# Byte-compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables or secrets (if any)
+.env
