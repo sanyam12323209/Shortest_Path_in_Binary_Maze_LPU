@@ -426,7 +426,7 @@
   </div>
 
   <script>
-    const API_BASE_URL = '';
+    const API_BASE_URL = window.location.hostname.includes('localhost') ? 'http://localhost:5000' : 'https://shortest-path-in-binary-maze-lpu.onrender.com';
     let gridData = [];
     let start = null;
     let end = null;
